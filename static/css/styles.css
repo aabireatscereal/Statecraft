@@ -201,7 +201,7 @@ font-size:30px;
     font-size:22.5px;
 }
     
-@media screen and (min-width:375px) {
+@media screen and (min-width:320px){
 
     #title-text {
         font-size:35px;
@@ -274,6 +274,7 @@ font-size:30px;
 
 
 @media screen and (min-width:1024px) {
+
     #about-section {
         display:block;
     }
@@ -290,20 +291,18 @@ font-size:30px;
         display:none;
     }
 
+  
     #navmob {
-        display:flex;
-        padding: top 10px bottom 10px;
+        display:none;
     }
 
     #navmob > button {
-        background-color: white;
-        color:#121629;
-        border:1px solid #121629;
+        display:none;
 
     }
 
     #nav {
-        display:none;
+        display:flex;
     }
 
 }
@@ -364,8 +363,5 @@ font-size:30px;
         font-size:0px;
     }
 
-    #actual-letter {
-        font-size:17.5px;
-    }
 
 }
