@@ -278,6 +278,17 @@ font-size:30px;
 
 }
 
+@media screen and (min-width:768px) {
+    
+    #commbox {
+        display:block;
+    }
+
+    #commbox-mob {
+        display:none;
+    }
+}
+
 
 @media screen and (min-width:1024px) {
 
