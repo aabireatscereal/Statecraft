@@ -1,5 +1,9 @@
 {% extends 'layout.html' %}
 
+{% block title %}
+  <title>UNSC</title>
+{% endblock %}
+
 {% block content %}
 
 {% load static %}
@@ -14,20 +18,87 @@
         }
       </style>
   
-  <div class="container-fluid">
-      <div class="row" id="committeebox" style="border-bottom: solid 4px white;">
-      <div class="col-8">
-          <h1  style="font-family: 'Poppins', sans-serif; font-weight: 900px; color:white;">UNITED NATIONS <br>SECURITY COUNCIL</h1>
-      </div>        
-        <div class="col-4">
-          <img style="border-radius: 800px; width:85%; height:auto; border: 12px #036ab0 solid " src="{% static 'image/unsc.png'%}">
+<div id="commbox">
+    <div class="container-fluid">
+        <div class="row" id="committeebox" style="border-bottom: solid 4px white;">
+        <div class="col-8">
+            <h1 id="comm-title" style="font-family: 'Special Gothic Expanded One', sans-serif; font-weight: 900px; color:white;">UNITED NATIONS <br>SECURITY COUNCIL</h1>
+        </div>        
+          <div class="col-4">
+            <img style="border-radius: 800px; width:85%; height:auto; border: 12px #036ab0 solid " src="{% static 'image/unsc.png'%}">
+          </div>
+      </div>
+      <div class="row" style="text-align: center;">
+          <h1 id="latinquote" style="font-style:italic; color:white;">'Ad maiorem Syriam'</h1>
+      </div>
+      </div>
+  
+      <br>
+      <br>
+      <br>
+  
+      <div class="container text-center" style="width:55%; height:auto; border:white 2px solid;">
+        <div class="row">
+          <div class="col" style="background-color: white; color:black;  padding:10px; border: 2px rgb(0, 0, 0) solid;">
+            <h1 class="info" >Freeze Date: </h1>
+          </div>
+          
+          <div class="col">
+            <h1 class="info" style="color:white;  padding:10px;"> December 8, 2024</h1>
+          </div>
         </div>
-    </div>
-    <div class="row" style="text-align: center;">
-        <h1 style="font-size:30px; font-style:italic; color:white;">'Ad maiorem Syriam'</h1>
-    </div>
-    </div>
+      </div>
+  
+      <div class="container text-center" style="width:55%; height:auto; border:white 2px solid;">
+        <div class="row">
+          <div class="col" style="background-color: white; color:black;  padding:10px; border: 2px rgb(0, 0, 0) solid;">
+            <h1 class="info" ><br>Agenda: </h1>
+          </div>
+          
+          <div class="col">
+            <h1 class="info"  style="color:white; padding:10px;">Syrian Civil War<br><br>
+              Collapse of Assad Regime
+              
+              
+              </h1>
+          </div>
+        </div>
+      </div>
+  
+      <br>
+      <br>
+      <br>
+  
+      <div id="committee-desc" class="container text-center" style="padding: top 30px; color:white;">
+        <p>
+          Welcome to the United Nations Security Council, where the Syrian Civil War is escalating, and the collapse of the Assad regime creates a power vacuum. Delegates will be at the forefront of finding solutions to the growing humanitarian crisis, while balancing the geopolitical interests of international powers.
+          
+          </p>
+      </div>
+  
+      <br>
+      <br>
+  
+      <div class="container text-center">
+        <h1 id="commsrctitle" style="font-family: 'Special Gothic Expanded One', sans-serif; color:white; font-weight:900px;">COMMITTEE RESOURCES</h1>
+        <br>
+        </div>
+</div>
 
+<div id="commbox-mob">
+
+  <div class="row" id="committeebox">
+    <div class="container text-center">
+      
+      <div class="col-12">
+      
+        <img style="border-radius: 200px; width:100%; height:auto;" src="{% static 'image/unsc.png'%}">
+      
+        <h1 id="comm-title" style="font-family: 'Special Gothic Expanded One', sans-serif; font-weight: 900px; color:white; align-self:center;">UNITED NATIONS <br>SECURITY COUNCIL</h1>         
+      </div>
+    </div>
+  </div>
+    
     <br>
     <br>
     <br>
@@ -35,11 +106,11 @@
     <div class="container text-center" style="width:55%; height:auto; border:white 2px solid;">
       <div class="row">
         <div class="col" style="background-color: white; color:black;  padding:10px; border: 2px rgb(0, 0, 0) solid;">
-          <h1 style="font-size:27px;">Freeze Date: </h1>
+          <h1 class="info" >Freeze Date: </h1>
         </div>
         
         <div class="col">
-          <h1 style="font-size:27px; color:white;  padding:10px;"> December 8, 2024</h1>
+          <h1 class="info" style="color:white;  padding:10px;"> December 8, 2024</h1>
         </div>
       </div>
     </div>
@@ -47,11 +118,11 @@
     <div class="container text-center" style="width:55%; height:auto; border:white 2px solid;">
       <div class="row">
         <div class="col" style="background-color: white; color:black;  padding:10px; border: 2px rgb(0, 0, 0) solid;">
-          <h1 style="font-size:27px;"><br>Agenda: </h1>
+          <h1 class="info" ><br>Agenda: </h1>
         </div>
         
         <div class="col">
-          <h1 style="font-size:27px; color:white; padding:10px;">Syrian Civil War<br><br>
+          <h1 class="info"  style="color:white; padding:10px;">Syrian Civil War<br><br>
             Collapse of Assad Regime
             
             
@@ -64,8 +135,9 @@
     <br>
     <br>
 
-    <div class="container text-center" style="padding: top 30px; color:white; font-size:22.5px;">
-      <p>The UN Human Rights Council (UNHRC), established in 2006, is the main intergovernmental body within the UN system responsible for promoting and protecting human rights globally, addressing violations, and making recommendations.
+    <div id="committee-desc" class="container text-center" style="padding: top 30px; color:white;">
+      <p>Welcome to the United Nations Security Council, where the Syrian Civil War is escalating, and the collapse of the Assad regime creates a power vacuum. Delegates will be at the forefront of finding solutions to the growing humanitarian crisis, while balancing the geopolitical interests of international powers.
+
       </p>
     </div>
 
@@ -73,38 +145,24 @@
     <br>
 
     <div class="container text-center">
-      <h1 style="font-family: 'Poppins', sans-serif; color:white; font-weight:900px;">COMMITTEE RESOURCES</h1>
-      <h4 style="font-family: 'Poppins', sans-serif; color:white; font-weight:900px;">will be provided at a later date...</h4>
+      <h1 id="commsrctitle" style="font-family: 'Special Gothic Expanded One', sans-serif; color:white; font-weight:900px;">COMMITTEE RESOURCES</h1>
       <br>
-      <br>
-      <br>
-
-      <!-- <div class="row">
-       
-        <div class="col">
-          <div class="card" style="width: 35%">
-            <img src="" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Study Guide</h5>
-              <p class="card-text">The study guide for the committee provides all the neccesary information regarding the committee.</p>
-              <a href="#" class="btn btn-primary stretched-link">Go to the Study Guide</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card" style="width: 35%;">
-            <img src="" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Committee Matrix</h5>
-              <p class="card-text">The matrix for the committee provides all the allocations in the committee.</p>
-              <a href="#" class="btn btn-primary stretched-link">Go to the Committee Matrix</a>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div> -->
+</div>
+
+
+<div class="container align-items-center" id="commsrc">
+  <div class="row">
+   
+    <div class="col" >
+      <div class="card" >
+        <img src="{% static 'image/secu.jpg' %}">
+        <a target="_blank" href="https://drive.google.com/drive/folders/1sBDegrFy2RAarM3CDYrvDZ2EtwKHyweS?usp=sharing" class="btn btn-primary stretched-link" style="background: transparent; color:transparent;"></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 
 {% endblock %}
