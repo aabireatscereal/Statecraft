@@ -285,6 +285,14 @@ font-size:30px;
         font-size:0px;
     }
 
+    #pending-1 {
+        font-size:20px;
+    }
+
+    #pending-2 {
+        font-size:15px;
+    }
+
 }
 
 @media screen and (min-width:768px) {
@@ -307,6 +315,13 @@ font-size:30px;
 
     #letter-title, #letter-secondary-title {
         font-size:35px;
+    }
+    #pending-1 {
+        font-size:20px;
+    }
+
+    #pending-2 {
+        font-size:15px;
     }
 }
 
@@ -422,6 +437,14 @@ font-size:30px;
         font-size:0px;
     }
 
+    #pending-1 {
+        font-size:70px;
+    }
+
+    #pending-2 {
+        font-size:25px;
+    }
+
 }
 
 @media screen and (min-width:1980px){
@@ -480,6 +503,16 @@ font-size:30px;
         font-size:0px;
     }
 
+
+    
+
+    #pending-1 {
+        font-size:70px;
+    }
+
+    #pending-2 {
+        font-size:25px;
+    }
 }
 
 @media screen and (min-width:2560px) {
